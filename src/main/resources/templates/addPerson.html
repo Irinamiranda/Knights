@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>My application to add person</title>
+</head>
+<body>
+<img src="https://image.shutterstock.com/image-vector/knight-260nw-192869372.jpg" alt="picture of knight" height="248" width="280">
+<form th:action="@{/saveperson}"  th:object="${personObject}" method="post">
+    Name:
+    <input type="text" th:field="${personObject.name}">
+
+    Quest:
+    <input type="text" th:field="*{quest}">
+
+    Question:
+    <input type="text" th:field="${randQuestion.question.getFeedBacks()}">
+    <input type="Submit" value="Submit">
+
+</form>
+
+</body>
+</html>

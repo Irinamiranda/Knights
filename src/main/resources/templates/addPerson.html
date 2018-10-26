@@ -13,8 +13,8 @@
     Quest:
     <input type="text" th:field="*{quest}">
 
-    Question:
-    <input type="text" th:field="${randQuestion.question.getFeedBacks()}">
+    Question: <span th:text="${randQuestion.feedback}"/>
+    <input type="text" th:field="*{question}">
     <input type="Submit" value="Submit">
 
 </form>

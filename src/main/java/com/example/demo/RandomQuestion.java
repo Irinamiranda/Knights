@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class RandomQuestion {
 
-    public static String getFeedback() {
+    public String getFeedback() {
         String[] feedbacks = {
                 "What is your favorite color?",
                 "What is the airspeed velocity of an unladen swallow?",
